@@ -1,3 +1,3 @@
 # Personal Website
 
-My new Flutter project.
+Just a new project :-)
