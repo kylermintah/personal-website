@@ -8,19 +8,17 @@ class NavigationBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          SizedBox(
-            height: 80,
-            width: 150,
-            child: Image.asset('assets/logo.jpg'),
-          ),
+          
+          CircleAvatar(backgroundImage: NetworkImage('https://avatars0.githubusercontent.com/u/24496327?s=460&u=bcf3a16b2e0cb13208d07a98810907859e30f94f&v=4'), 
+          maxRadius: 30, minRadius: 20,),
           Row(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              _NavBarItem('Episodes'),
+              _NavBarItem('Projects'),
               SizedBox(
                 width: 60,
               ),
-              _NavBarItem('About'),
+              _NavBarItem('Education'),
             ],
           )
         ],
